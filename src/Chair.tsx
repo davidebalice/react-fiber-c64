@@ -8,8 +8,8 @@ export default function Chair() {
     <>
       <primitive
         object={chair.scene}
-        position-y={-6.27}
-        scale={[1.4, 1.4, 1.4]}
+        position={[0.5, -2.75, 5]}
+        scale={[4.0, 4.0, 4.0]}
         receiveShadow
       />
     </>

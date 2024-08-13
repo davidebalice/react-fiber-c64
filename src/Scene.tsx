@@ -10,6 +10,7 @@ import C64 from "./C64.js";
 import DbLogo from "./DbLogo";
 import Mug from "./Mug";
 import Table from "./Table.js";
+import Chair from "./Chair.js";
 
 interface SceneProps {
   device: string;
@@ -148,13 +149,11 @@ export default function Scene({
           targetPosition={cameraPosition}
           targetRotation={cameraRotation}
         />
-        {device != "smartphone" && device != "tablet" && device != "tv" && (
-          <>
-            <Mug />
-            <DbLogo />
-            <Table />
-          </>
-        )}
+
+        <Mug />
+        <DbLogo />
+        <Table />
+        <Chair />
 
         {renderDevice(websiteUrl)}
       </PresentationControls>
